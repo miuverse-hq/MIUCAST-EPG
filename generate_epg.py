@@ -21,7 +21,7 @@ def generate_epg(days_count=30, output_path="epg.xml"):
         xml_lines.append('\t</channel>')
     xml_lines.append('')
     
-    # สร้างข้อมูลโปรแกรมล่วงหน้า 30 วัน
+    # สร้างข้อมูลโปรแกรมล่วงหน้า 30 วัน ในรูปแบบ GMT+7 (+0700)
     for i in range(days_count):
         current_day = start_date + datetime.timedelta(days=i)
         next_day = current_day + datetime.timedelta(days=1)
@@ -30,13 +30,13 @@ def generate_epg(days_count=30, output_path="epg.xml"):
         next_day_str = next_day.strftime("%Y%m%d")
         
         for ch in channels:
-            # ช่วงเวลา 12:00 ถึง 00:00 (ของวันถัดไป)
-            xml_lines.append(f'\t<programme start="{day_str}120000 +0000" stop="{next_day_str}000000 +0000" channel="{ch["id"]}">')
+            # ช่วงเวลา 12:00 ถึง 00:00 (ของวันเดียวกันถึงเที่ยงคืน)
+            xml_lines.append(f'\t<programme start="{day_str}120000 +0700" stop="{next_day_str}000000 +0700" channel="{ch["id"]}">')
             xml_lines.append('\t\t<title lang="th">ไม่มีข้อมูลรายการโทรทัศน์อิเล็กทรอนิกส์ (EPG)</title>')
             xml_lines.append('\t</programme>')
             
             # ช่วงเวลา 00:00 ถึง 12:00 (ของวันถัดไป)
-            xml_lines.append(f'\t<programme start="{next_day_str}000000 +0000" stop="{next_day_str}120000 +0000" channel="{ch["id"]}">')
+            xml_lines.append(f'\t<programme start="{next_day_str}000000 +0700" stop="{next_day_str}120000 +0700" channel="{ch["id"]}">')
             xml_lines.append('\t\t<title lang="th">ไม่มีข้อมูลรายการโทรทัศน์อิเล็กทรอนิกส์ (EPG)</title>')
             xml_lines.append('\t</programme>')
             xml_lines.append('')
