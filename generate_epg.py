@@ -4,7 +4,8 @@ def generate_epg(days_count=30, output_path="epg.xml"):
     channels = [
         {"id": "NBT-HD.th", "name": "NBT HD"},
         {"id": "NATION-TV.th", "name": "NATION TV"},
-        {"id": "TOP-NEWS.th", "name": "TOP NEWS"}
+        {"id": "TOP-NEWS.th", "name": "TOP NEWS"},
+        {"id": "EPG.null", "name": "MIUCAST"}
     ]
     
     start_date = datetime.date.today()
