@@ -1,0 +1,32 @@
+name: Auto Update EPG
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch: # เปิดให้กดสั่งรันเองแบบ Manual ได้ด้วย
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # อนุญาตให้เขียนไฟล์กลับเข้าคลังได้
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Generate EPG XML
+      run: python generate_epg.py
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@://github.com"
+        git add epg.xml
+        git diff-index --quiet HEAD || git commit -m "Auto-update EPG for the next 30 days [skip ci]"
+        git push
