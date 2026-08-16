@@ -2,9 +2,6 @@ import datetime
 
 def generate_epg(days_count=30, output_path="epg.xml"):
     channels = [
-        {"id": "NBT-HD.th", "name": "NBT HD"},
-        {"id": "NATION-TV.th", "name": "NATION TV"},
-        {"id": "TOP-NEWS.th", "name": "TOP NEWS"},
         {"id": "EPG.null", "name": "MIUCAST"}
     ]
     
@@ -33,12 +30,12 @@ def generate_epg(days_count=30, output_path="epg.xml"):
         for ch in channels:
             # ช่วงเวลา 12:00 ถึง 00:00 (ของวันเดียวกันถึงเที่ยงคืน)
             xml_lines.append(f'\t<programme start="{day_str}120000 +0700" stop="{next_day_str}000000 +0700" channel="{ch["id"]}">')
-            xml_lines.append('\t\t<title lang="th">MIUCAST EPG</title>')
+            xml_lines.append('\t\t<title lang="th">บริการข้อมูลผังรายการอิเล็กทรอนิกส์ (EPG)</title>')
             xml_lines.append('\t</programme>')
             
             # ช่วงเวลา 00:00 ถึง 12:00 (ของวันถัดไป)
             xml_lines.append(f'\t<programme start="{next_day_str}000000 +0700" stop="{next_day_str}120000 +0700" channel="{ch["id"]}">')
-            xml_lines.append('\t\t<title lang="th">MIUCAST EPG</title>')
+            xml_lines.append('\t\t<title lang="th">บริการข้อมูลผังรายการอิเล็กทรอนิกส์ (EPG)</title>')
             xml_lines.append('\t</programme>')
             xml_lines.append('')
             
