@@ -14,34 +14,6 @@
 		<display-name lang="th">MIUCAST</display-name>
 	</channel>
 
-	<programme start="20260815120000 +0700" stop="20260816000000 +0700" channel="NBT-HD.th">
-		<title lang="th">MIUCAST EPG</title>
-	</programme>
-	<programme start="20260816000000 +0700" stop="20260816120000 +0700" channel="NBT-HD.th">
-		<title lang="th">MIUCAST EPG</title>
-	</programme>
-
-	<programme start="20260815120000 +0700" stop="20260816000000 +0700" channel="NATION-TV.th">
-		<title lang="th">MIUCAST EPG</title>
-	</programme>
-	<programme start="20260816000000 +0700" stop="20260816120000 +0700" channel="NATION-TV.th">
-		<title lang="th">MIUCAST EPG</title>
-	</programme>
-
-	<programme start="20260815120000 +0700" stop="20260816000000 +0700" channel="TOP-NEWS.th">
-		<title lang="th">MIUCAST EPG</title>
-	</programme>
-	<programme start="20260816000000 +0700" stop="20260816120000 +0700" channel="TOP-NEWS.th">
-		<title lang="th">MIUCAST EPG</title>
-	</programme>
-
-	<programme start="20260815120000 +0700" stop="20260816000000 +0700" channel="EPG.null">
-		<title lang="th">MIUCAST EPG</title>
-	</programme>
-	<programme start="20260816000000 +0700" stop="20260816120000 +0700" channel="EPG.null">
-		<title lang="th">MIUCAST EPG</title>
-	</programme>
-
 	<programme start="20260816120000 +0700" stop="20260817000000 +0700" channel="NBT-HD.th">
 		<title lang="th">MIUCAST EPG</title>
 	</programme>
@@ -851,6 +823,34 @@
 		<title lang="th">MIUCAST EPG</title>
 	</programme>
 	<programme start="20260914000000 +0700" stop="20260914120000 +0700" channel="EPG.null">
+		<title lang="th">MIUCAST EPG</title>
+	</programme>
+
+	<programme start="20260914120000 +0700" stop="20260915000000 +0700" channel="NBT-HD.th">
+		<title lang="th">MIUCAST EPG</title>
+	</programme>
+	<programme start="20260915000000 +0700" stop="20260915120000 +0700" channel="NBT-HD.th">
+		<title lang="th">MIUCAST EPG</title>
+	</programme>
+
+	<programme start="20260914120000 +0700" stop="20260915000000 +0700" channel="NATION-TV.th">
+		<title lang="th">MIUCAST EPG</title>
+	</programme>
+	<programme start="20260915000000 +0700" stop="20260915120000 +0700" channel="NATION-TV.th">
+		<title lang="th">MIUCAST EPG</title>
+	</programme>
+
+	<programme start="20260914120000 +0700" stop="20260915000000 +0700" channel="TOP-NEWS.th">
+		<title lang="th">MIUCAST EPG</title>
+	</programme>
+	<programme start="20260915000000 +0700" stop="20260915120000 +0700" channel="TOP-NEWS.th">
+		<title lang="th">MIUCAST EPG</title>
+	</programme>
+
+	<programme start="20260914120000 +0700" stop="20260915000000 +0700" channel="EPG.null">
+		<title lang="th">MIUCAST EPG</title>
+	</programme>
+	<programme start="20260915000000 +0700" stop="20260915120000 +0700" channel="EPG.null">
 		<title lang="th">MIUCAST EPG</title>
 	</programme>
 
