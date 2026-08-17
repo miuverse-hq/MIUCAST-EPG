@@ -5,13 +5,6 @@
 		<display-name lang="th">MIUCAST</display-name>
 	</channel>
 
-	<programme start="20260816120000 +0700" stop="20260817000000 +0700" channel="EPG.null">
-		<title lang="th">บริการข้อมูลผังรายการอิเล็กทรอนิกส์ (EPG)</title>
-	</programme>
-	<programme start="20260817000000 +0700" stop="20260817120000 +0700" channel="EPG.null">
-		<title lang="th">บริการข้อมูลผังรายการอิเล็กทรอนิกส์ (EPG)</title>
-	</programme>
-
 	<programme start="20260817120000 +0700" stop="20260818000000 +0700" channel="EPG.null">
 		<title lang="th">บริการข้อมูลผังรายการอิเล็กทรอนิกส์ (EPG)</title>
 	</programme>
@@ -212,6 +205,13 @@
 		<title lang="th">บริการข้อมูลผังรายการอิเล็กทรอนิกส์ (EPG)</title>
 	</programme>
 	<programme start="20260915000000 +0700" stop="20260915120000 +0700" channel="EPG.null">
+		<title lang="th">บริการข้อมูลผังรายการอิเล็กทรอนิกส์ (EPG)</title>
+	</programme>
+
+	<programme start="20260915120000 +0700" stop="20260916000000 +0700" channel="EPG.null">
+		<title lang="th">บริการข้อมูลผังรายการอิเล็กทรอนิกส์ (EPG)</title>
+	</programme>
+	<programme start="20260916000000 +0700" stop="20260916120000 +0700" channel="EPG.null">
 		<title lang="th">บริการข้อมูลผังรายการอิเล็กทรอนิกส์ (EPG)</title>
 	</programme>
 
